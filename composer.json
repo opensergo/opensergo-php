@@ -1,0 +1,31 @@
+{
+    "name": "opensergo/opensergo-php",
+    "description": "PHP SDK for OpenSergo",
+    "keywords": ["opensergo", "service-governance", "microservices","gRPC", "protobuf"],
+    "type": "library",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "opensergo-php contributors",
+            "homepage": "https://github.com/opensergo/opensergo-php/graphs/contributors"
+        },
+        {
+            "name": "opensergo-specification contributors",
+            "homepage": "https://github.com/opensergo/opensergo-specification/graphs/contributors"
+        }
+    ],
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "google/protobuf": "^v3.3.0",
+        "ext-grpc": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Opensergo\\Proto\\": "Opensergo/Proto/",
+            "GPBMetadata\\Opensergo\\": "GPBMetadata/Opensergo/"
+        }
+    },
+    "suggest": {
+        "ext-protobuf": "For better performance, when dealing with the protobuf format"
+    }
+}
